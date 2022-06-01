@@ -11,4 +11,4 @@ then\
 as well as\
 `dotnet user-secrets set ApiKey secretApiKey`\
 
-Dotnet user-secrets are not made for production. In production, the Connection String and Api Key must be declared via environmental variables. I do this via Docker. The variables are declared in the docker-compose, passing them to this application's Dockerfile, which sets up the variables.
+Dotnet user-secrets are not made for production. In production, `ConnectionString` and `ApiKey` must again be declared, but via environmental variables. I do this via Docker. The variables are declared in the docker-compose, passing them to this application's Dockerfile, which sets up the variables.
